@@ -10,16 +10,16 @@ Debugger extension for Chromecast receiver apps
 
 # Example of the receiver registration:
 
-`window.quizcast.CastEmulator.register(context, playerManager);
-window.quizcast.CastEmulator.addCustomMessageListener(CHANNEL_URL, (customEvent) => {
-    console.log('>>>>>>>>>>>>>>>>> CUSTOM EVENT <<<<<<<<<<<<<<<<<<<<<<<<<');
-    console.log(customEvent);    
-    // handle customEvent.
-  });`
+`window.quizcast.CastEmulator.register(context, playerManager);  
+window.quizcast.CastEmulator.addCustomMessageListener(CHANNEL_URL, (customEvent) => {  
+    console.log('>>>>>>>>>>>>>>>>> CUSTOM EVENT <<<<<<<<<<<<<<<<<<<<<<<<<');  
+    console.log(customEvent);      
+    // handle customEvent.  
+  });`  
 
- `window.quizcast.CastEmulator.addEventListener(
-    cast.framework.events.EventType.MEDIA_STATUS,
-    handleMediaStatusEvent,
+ `window.quizcast.CastEmulator.addEventListener(  
+    cast.framework.events.EventType.MEDIA_STATUS,  
+    handleMediaStatusEvent,  
   );`
 
 # Example of the commands configuration:
