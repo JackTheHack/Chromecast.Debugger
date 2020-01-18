@@ -24,10 +24,10 @@ window.quizcast.CastEmulator.addCustomMessageListener(CHANNEL_URL, (customEvent)
 
 # Example of the commands configuration:
 
-name - command name
-description - command description
-command - data that would be sent to the Chromecast receiver on the button click
-hasParameter - if true the parameter could be supplied with the data and all occurances of [PARAMETER] in the data would be replaced with the parameter value
-namespace - if supplied would override the default namespace for custom events
-isEvent - if true data would be passed as event instead of custome event
-eventName - if isEvent is true eventName is required to specify the name of the event to trigger
+`name` - command name  
+`description` - command description  
+`command` - data that would be sent to the Chromecast receiver on the button click  
+`hasParameter` - if true the parameter could be supplied with the data and all occurances of [PARAMETER] in the data would be replaced with the parameter value  
+`namespace` - if supplied would override the default namespace for custom events  
+`isEvent` - if true data would be passed as event instead of custome event  
+`eventName` - if isEvent is true eventName is required to specify the name of the event to trigger  
