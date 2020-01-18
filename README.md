@@ -2,13 +2,13 @@
 Debugger extension for Chromecast receiver apps
 
 # How to use:
-- Install the extension by manually adding the extension and pointing to the "ext" folder
-- Configure the commands for the extension in the options
+- Install the extension by manually adding the extension in Chrome and pointing to the "ext" folder (see Chrome options -> More Tools -> Extensions)
+- Configure the commands for the extension in the options (options page is accessible by right clicking on the extension icon)
 - Add the script on the receiver page (already done in the Quizcast app)
-- Use the script proxy calls to subscribe to Chromecast events instead of original one (the proxy will detect whether page is in Chromecast or emulated automatically)
+- Use the script proxy calls (see example below) to subscribe to Chromecast events instead of original one (the proxy will detect whether page is in Chromecast or emulated automatically)
 - Run the commands from the extension icon in the top-right corner
 
-# Example of the receiver registration:
+# Example of the proxy receiver registration:
 
 `window.quizcast.CastEmulator.register(context, playerManager);  
 window.quizcast.CastEmulator.addCustomMessageListener(CHANNEL_URL, (customEvent) => {  
