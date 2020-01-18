@@ -1,0 +1,30 @@
+body{
+  min-height: 500px;
+}
+
+#commandsContainer div{  
+  width: 500px;
+  clear: both;
+  padding-top: 3px;
+}
+
+.commandTitle{
+  float:left;
+  width: 400px;  
+}
+
+.commandTitleWithParameter
+{
+  float: left;
+  width: 100px;
+}
+
+.commandParameter{
+  float:left;
+  width: 296px;
+}
+
+.commandRun{
+  float:left;
+  width: 100px;
+}
